@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:furniflex/view/selectcity.dart';
+import 'package:furniflex/view/boardingscreen.dart';
+// import 'package:furniflex/view/homescreen.dart';
+// import 'package:furniflex/view/selectcity.dart';
 // import 'package:furniflex/view/boardingscreen.dart';
 // import 'package:furniflex/view/login.dart';
 // import 'package:furniflex/view/signup.dart';
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SelectCity(),
+      home: const PageViewScreen(),
     );
   }
 }

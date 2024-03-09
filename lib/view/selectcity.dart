@@ -3,7 +3,6 @@ import 'package:furniflex/view/commons/appcolor.dart';
 import 'package:furniflex/view/commons/apptext.dart';
 import 'package:furniflex/view/commons/globaltext.dart';
 
-
 class SelectCity extends StatefulWidget {
   const SelectCity({super.key});
 
@@ -46,7 +45,7 @@ class _SelectCityState extends State<SelectCity> {
               text: Apptext.selectcity,
               fontsize: 28,
               fontweight: FontWeight.w500,
-            color: AppColor.primarycolor,
+              color: AppColor.primarycolor,
             ),
             Expanded(
               child: GridView.builder(
@@ -60,7 +59,7 @@ class _SelectCityState extends State<SelectCity> {
                     return Container(
                       decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(2)),
-                        //  color: Colors.white,
+                          //  color: Colors.white,
                           color: Color(0xffF2F2F3),
                           boxShadow: [
                             BoxShadow(

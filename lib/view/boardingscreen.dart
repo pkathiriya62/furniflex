@@ -3,7 +3,6 @@ import 'package:furniflex/view/commons/appcolor.dart';
 import 'package:furniflex/view/commons/appimage.dart';
 import 'package:furniflex/view/commons/apptext.dart';
 import 'package:furniflex/view/commons/pageview.dart';
-// import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class PageViewScreen extends StatefulWidget {
@@ -26,11 +25,11 @@ class _PageViewScreenState extends State<PageViewScreen> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
-    // var width = MediaQuery.of(context).size.width;
+    
     return Scaffold(
       body: Column(
         children: [
-          Container(
+          SizedBox(
             height: height * 0.7,
             child: PageView(
               controller: controller,
@@ -56,14 +55,14 @@ class _PageViewScreenState extends State<PageViewScreen> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
           SmoothPageIndicator(
             controller: controller,
             count: 3,
             // axisDirection: Axis.horizontal,
-            effect: ExpandingDotsEffect(
+            effect: const ExpandingDotsEffect(
               spacing: 4.0,
               radius: 7.0,
               dotWidth: 12,
@@ -93,7 +92,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                           child: Container(
                             height: 50,
                             width: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xffF1DAC7),
                               shape: BoxShape.circle,
                             ),
@@ -104,7 +103,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                           child: Container(
                             height: 50,
                             width: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xffE7C3A1),
                               shape: BoxShape.circle,
                             ),
@@ -115,7 +114,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                           child: Container(
                             height: 50,
                             width: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xffDDAC7B),
                               shape: BoxShape.circle,
                             ),
@@ -126,11 +125,11 @@ class _PageViewScreenState extends State<PageViewScreen> {
                           child: Container(
                             height: 50,
                             width: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xffD39555),
                               shape: BoxShape.circle,
                             ),
-                            child: Icon(
+                            child: const Icon(
                               Icons.arrow_forward,
                               color: Colors.white,
                             ),
@@ -151,7 +150,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                       TextButton(
                         onPressed: () {
                           controller.previousPage(
-                            duration: Duration(microseconds: 500),
+                            duration: const Duration(microseconds: 500),
                             curve: Curves.easeInOut,
                           );
                         },
@@ -169,7 +168,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                               child: Container(
                                 height: 50,
                                 width: 50,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xffF1DAC7),
                                   shape: BoxShape.circle,
                                 ),
@@ -180,7 +179,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                               child: Container(
                                 height: 50,
                                 width: 50,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xffE7C3A1),
                                   shape: BoxShape.circle,
                                 ),
@@ -191,7 +190,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                               child: Container(
                                 height: 50,
                                 width: 50,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xffDDAC7B),
                                   shape: BoxShape.circle,
                                 ),
@@ -202,11 +201,11 @@ class _PageViewScreenState extends State<PageViewScreen> {
                               child: Container(
                                 height: 50,
                                 width: 50,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xffD39555),
                                   shape: BoxShape.circle,
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.arrow_forward,
                                   color: Colors.white,
                                 ),
@@ -226,7 +225,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                       TextButton(
                         onPressed: () {
                           controller.previousPage(
-                            duration: Duration(microseconds: 500),
+                            duration: const Duration(microseconds: 500),
                             curve: Curves.easeInOut,
                           );
                         },
@@ -238,7 +237,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          Container(
+                          SizedBox(
                             height: 46,
                             width: 120,
                             child: ElevatedButton(
@@ -246,9 +245,9 @@ class _PageViewScreenState extends State<PageViewScreen> {
                               style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(8)),
-                                backgroundColor: Color(0xffD39555),
+                                backgroundColor: const Color(0xffD39555),
                               ),
-                              child: Align(
+                              child: const Align(
                                 alignment: Alignment.center,
                                 child: Text(
                                   'Get Started',
