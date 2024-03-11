@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_interpolation_to_compose_strings, avoid_print, sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 import 'package:furniflex/view/commons/appimage.dart';
 import 'package:furniflex/view/commons/apptext.dart';
@@ -42,14 +44,14 @@ class _VarificationState extends State<Varification> {
             fontsize: 16,
             fontweight: FontWeight.w300,
           ),
-          SizedBox(height: 44),
+          const SizedBox(height: 44),
           OTPTextField(
            outlineBorderRadius: 8,
           length: 4,
           otpFieldStyle: OtpFieldStyle(
-          backgroundColor: Color(0xffBFC0C1),
-          focusBorderColor: Color(0xffBFC0C1),
-          enabledBorderColor: Color(0xffBFC0C1),
+          backgroundColor: const Color(0xffBFC0C1),
+          focusBorderColor: const Color(0xffBFC0C1),
+          enabledBorderColor: const Color(0xffBFC0C1),
           ),
           width: double.infinity,
           fieldWidth: 78,
@@ -62,7 +64,7 @@ class _VarificationState extends State<Varification> {
         },
       
           ),
-          SizedBox(height: 44),
+          const SizedBox(height: 44),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
@@ -70,14 +72,14 @@ class _VarificationState extends State<Varification> {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  Get.to(Varified());
+                  Get.to(const Varified());
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8)),
-                  backgroundColor: Color(0xffD39555),
+                  backgroundColor: const Color(0xffD39555),
                 ),
-                child: Align(
+                child: const Align(
                   alignment: Alignment.center,
                   child: Text(
                     'Verify',

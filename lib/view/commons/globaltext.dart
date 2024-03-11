@@ -8,7 +8,7 @@ class Globaltext extends StatelessWidget {
   final String? fontfamily;
   final TextStyle? textStyle;
 
-  Globaltext(
+  const Globaltext(
       {super.key,
       required this.text,
       this.color,

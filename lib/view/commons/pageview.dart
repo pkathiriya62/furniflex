@@ -1,4 +1,6 @@
 
+// ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables, avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:furniflex/view/commons/appcolor.dart';
 import 'package:furniflex/view/commons/globaltext.dart';
@@ -21,11 +23,11 @@ class onboarding extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Spacer(flex: 40,),
+              const Spacer(flex: 40,),
                TextButton(
                     onPressed: () {
                       controller.previousPage(
-                        duration: Duration(microseconds: 500),
+                        duration: const Duration(microseconds: 500),
                         curve: Curves.easeInOut,
                       );
                     },

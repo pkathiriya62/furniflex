@@ -1,8 +1,10 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   // ignore: prefer_const_constructors_in_immutables
-  CustomButton({required this.text, required this.onPressed});
+  CustomButton({super.key, required this.text, required this.onPressed});
 
   final String text;
   final GestureTapCallback onPressed;

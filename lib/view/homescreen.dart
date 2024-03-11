@@ -14,7 +14,7 @@ class _HomescreenState extends State<Homescreen> {
       body: Column(
         
         children: [
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
           Center(child: Image.asset('assets/images/furniflex icon 1.png',scale: 3,)),
         ],
       ),

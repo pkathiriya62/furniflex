@@ -1,11 +1,10 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 import 'package:furniflex/view/commons/apptext.dart';
 import 'package:furniflex/view/commons/globaltext.dart';
 import 'package:furniflex/view/selectcity.dart';
 import 'package:get/get.dart';
-
-// import 'package:get/get.dart';
-
 
 class Varified extends StatefulWidget {
   const Varified({super.key});
@@ -39,7 +38,7 @@ class _VarifiedState extends State<Varified> {
               fontweight: FontWeight.w300,
               fontsize: 16,
             ),
-            SizedBox(
+            const SizedBox(
               height: 62,
             ),
             Container(
@@ -47,14 +46,14 @@ class _VarifiedState extends State<Varified> {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  Get.to(SelectCity());
+                  Get.to(const SelectCity());
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8)),
-                  backgroundColor: Color(0xffD39555),
+                  backgroundColor: const Color(0xffD39555),
                 ),
-                child: Align(
+                child: const Align(
                   alignment: Alignment.center,
                   child: Text(
                     'Get Started',

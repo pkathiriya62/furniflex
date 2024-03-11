@@ -38,7 +38,7 @@ class _SelectCityState extends State<SelectCity> {
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Globaltext(
@@ -50,16 +50,16 @@ class _SelectCityState extends State<SelectCity> {
             Expanded(
               child: GridView.builder(
                   itemCount: 10,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 3,
-                      mainAxisExtent: 117,
+                      mainAxisExtent: 117,        
                       mainAxisSpacing: 30,
                       crossAxisSpacing: 15),
                   itemBuilder: (context, index) {
                     return Container(
                       decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(2)),
-                          //  color: Colors.white,
+                         
                           color: Color(0xffF2F2F3),
                           boxShadow: [
                             BoxShadow(
@@ -68,13 +68,15 @@ class _SelectCityState extends State<SelectCity> {
                                 color: Colors.grey)
                           ]),
                       child: Column(
+                        
                         mainAxisAlignment: MainAxisAlignment.center,
+                        
                         children: [
                           Image.asset(
                             cityselection[index].image,
                             scale: 3,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 4,
                           ),
                           Globaltext(
